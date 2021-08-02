@@ -22,6 +22,11 @@ class ApplicationController < Sinatra::Base
     restaurants.to_json(include:{reviews:{include: :user}})
   end
 
+  get "/restaurants/title" do 
+    restaurants_title = Restaurant.all.order(:title)
+    restaurants_title.to_json
+    end
+
   get "/users/:id" do
     users = User.find(params[:id])
     users.to_json(include: :reviews)
