@@ -32,4 +32,9 @@ class ApplicationController < Sinatra::Base
     users.to_json(include: :reviews)
   end
 
+  get "/reviews" do
+    reviews = Review.all
+    reviews.to_json
+  end
+
 end
