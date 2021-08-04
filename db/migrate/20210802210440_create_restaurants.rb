@@ -6,8 +6,8 @@ class CreateRestaurants < ActiveRecord::Migration[6.1]
       t.string :street 
       t.string :city
       t.string :image_url
-      t.boolean :like
-      t.boolean :unlike
+      t.integer :like
+      t.integer :unlike
     end
   end
 end

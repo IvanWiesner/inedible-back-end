@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2021_08_02_210449) do
     t.string "street"
     t.string "city"
     t.string "image_url"
-    t.boolean "like"
-    t.boolean "unlike"
+    t.integer "like"
+    t.integer "unlike"
   end
 
   create_table "reviews", force: :cascade do |t|

@@ -37,4 +37,13 @@ class ApplicationController < Sinatra::Base
     reviews.to_json
   end
 
+  patch "/restaurants/:id" do
+    restaurant = Restaurant.find(params[:id])
+    restaurant.update(
+      like: params[:like],
+      unlike: params[:unlike]
+    )
+    restaurant.to_json
+  end
+
 end

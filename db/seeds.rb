@@ -13,17 +13,17 @@ puts "done seeding users"
 
 puts "seeding restaurant"
 #custom 10 restaurants no faker for title/style
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/d8GNyss.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/stCqgdW.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/K8eC3Ai.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/W5uWH4k.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/Is2O6y0.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/nRqzmeD.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/LftJ4Aw.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/myJ2i9m.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/dcfQPe8.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/gFeXSiM.jpg")
-    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/tz3njeo.jpg")
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/d8GNyss.jpg", like: 54, unlike: 1)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/stCqgdW.jpg", like: 2, unlike: 1)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/K8eC3Ai.jpg", like: 54, unlike: 6)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/W5uWH4k.jpg", like: 12, unlike: 44)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/Is2O6y0.jpg", like: 44, unlike: 98)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/nRqzmeD.jpg", like: 32, unlike: 3)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/LftJ4Aw.jpg", like: 77, unlike: 5)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/myJ2i9m.jpg", like: 87, unlike: 2)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/dcfQPe8.jpg", like: 33, unlike: 98)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/gFeXSiM.jpg", like: 3, unlike: 3)
+    Restaurant.create(title: Faker::Restaurant.name, style: Faker::Restaurant.type, street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/tz3njeo.jpg", like: 123, unlike: 44)
 puts "done seeding restaurant"
 
 puts "seeding reviews"
