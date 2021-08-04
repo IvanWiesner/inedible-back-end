@@ -1,4 +1,5 @@
 class ApplicationController < Sinatra::Base
+
   # register Sinatra::CrossOrigin
   set :default_content_type, 'application/json'
   
@@ -44,6 +45,15 @@ class ApplicationController < Sinatra::Base
       unlike: params[:unlike]
     )
     restaurant.to_json
+  end
+
+  post "/reviews" do
+    new_review = Review.create(
+      comment: params[:comment],
+      restaurant_id: params[:restaurant_id],
+      user_id: User.ids.sample
+    )
+    new_review.to_json
   end
 
 end
