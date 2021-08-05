@@ -23,6 +23,7 @@ puts "seeding restaurant"
     Restaurant.create(title: "The View", style: "Mediterranean", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/myJ2i9m.jpg", like:87, unlike:2)
     Restaurant.create(title: "Thirsty Creamery", style: "Dairy", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/dcfQPe8.jpg", like:33, unlike:98)
     Restaurant.create(title: "Red", style: "British", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/gFeXSiM.jpg", like:3, unlike:3)
+    Restaurant.create(title: "City Hall Cafe`", style: "Mediterranean", street: Faker::Address.street_address, city: Faker::Address.city, image_url:"https://i.imgur.com/iM2pN7J.jpg", like:22, unlike:4)
     Restaurant.create(title: "Tres Amigos", style: "Mexican", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/tz3njeo.jpg", like:123, unlike:44)
 puts "done seeding restaurant"
 
