@@ -25,51 +25,26 @@ puts "seeding restaurant"
     Restaurant.create(title: "Red", style: "British", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/gFeXSiM.jpg", like:3, unlike:3)
     Restaurant.create(title: "City Hall Cafe`", style: "Mediterranean", street: Faker::Address.street_address, city: Faker::Address.city, image_url:"https://i.imgur.com/iM2pN7J.jpg", like:22, unlike:4)
     Restaurant.create(title: "Tres Amigos", style: "Mexican", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/tz3njeo.jpg", like:123, unlike:44)
-puts "done seeding restaurant"
+    Restaurant.create(title: "Rainforest Skyline", style: "Mediterranean", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/ndqYmld.jpeg", like:65, unlike:54)
+    Restaurant.create(title: "Ivans Shack", style: "Cajun", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/boU7qUL.jpg", like:13, unlike:94)
+    Restaurant.create(title: "Rajijs' Deli", style: "Deli", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/GpDmLuI.jpg", like:23, unlike:56)
+    Restaurant.create(title: "Jacobs View", style: "Greek", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/vlproO0.jpg", like:534, unlike:2)
+    Restaurant.create(title: "Broken Yoke Cafe'", style: "Mexican/American", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/DZkEZW5.jpg", like:63, unlike:1)
+    Restaurant.create(title: "Waterfall Room", style: "British", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/d9lueRJ.jpg", like:93, unlike:65)
+    Restaurant.create(title: "Regio Cafe'", style: "Mexican", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/U6Wi1YF.jpg", like:323, unlike:43)
+    Restaurant.create(title: "Bad Daddy's", style: "Amreican", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/w5H1Hea.jpg", like:54, unlike:41)
+    Restaurant.create(title: "PastaMan", style: "Italian", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/9sz2mL2.jpg", like:945, unlike:12)
+    Restaurant.create(title: "Tazikis", style: "Mediterranean", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/2wTAQeU.jpg", like:234, unlike:3)
+    Restaurant.create(title: "Gary's Diary", style: "Dairy", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/8gBe4dv.jpg", like:565, unlike:45)
+    Restaurant.create(title: "Soon Fatt", style: "Chinese", street: Faker::Address.street_address, city: Faker::Address.city, image_url: "https://i.imgur.com/0ZDNRna.jpg", like:1, unlike:21)
 
+puts "done seeding restaurant"
 puts "seeding reviews"
 
 #have 1 example one and add to webite later when backend persist on front
+70.times do
     Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-    Review.create(comment: Faker::Restaurant.review, user_id: User.all.sample.id, restaurant_id: Restaurant.all.sample.id)
-
+end
 
 puts "done seeding reviews"
-
 puts "✅ all data done!"
